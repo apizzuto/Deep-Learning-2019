@@ -1,16 +1,16 @@
 # Deep Learning #
-####STAT 479##
-####Instructor: Sebastian Raschka###
+#### STAT 479 ##
+#### Instructor: Sebastian Raschka ###
 
 Some class notes put together by Scott Lucchini, Rob Morgan, and Alex Pizzuto for Sebastian Raschka's Deep Learning Class: STAT 479 at UW-Madison Spring 2019 ([github repo for the class](https://github.com/rasbt/stat479-deep-learning-ss19) and [course website](http://pages.stat.wisc.edu/~sraschka/teaching/stat479-ss2019/)).
 
 There is no required text for the course, but “Deep Learning” by Ian Goodfellow and Yoshua Bengio and Aaron Courville (MIT Press) is strongly recommended as supplemental text.
 
-###Introduction to Deep Learning###
+### Introduction to Deep Learning ###
 
 AI does not necessarily have to use AI and AI does not necessarily refer to a machine learning system. However, most machine learning uses AI.
 
-![AI distinction](./images/AI_ML_Venn.png "AI vs ML vs Deep Learning")
+![AI distinction](./images/AI_ML_venn.png "AI vs ML vs Deep Learning")
 
 The dawn of Machine Learning was intimately related to neural networkds, with the first models being the perceptron and ADALINE, which are the building blocks for neural networks. 
 
@@ -32,10 +32,10 @@ For further distinction, see the image below:
 
 ![ML distinction](./images/supervised_unsupervised.png "ML distinctions")
 
-####Supervised Learning####
+#### Supervised Learning ####
 This is often broken into classification or regression. Regression can be either regression or ordinal regression (similar to ranking, but slightly different).
 
-####Unsupervised Learning####
+#### Unsupervised Learning ####
 Dimensionality reduction and PCA: linear transformation of the dataset that maximizes the variance along one of the dimensions of the rotated frame
 
 Autencoders: Compressing data into a smaller subspace with fewer features but maintaining the important features (encoder), and then a layer that takes the reduces number of features to try to reconstruct the original feature 
