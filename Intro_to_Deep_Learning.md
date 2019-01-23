@@ -1,4 +1,4 @@
-#Deep Learning#
+# Deep Learning #
 ####STAT 479##
 ####Instructor: Sebastian Raschka###
 
