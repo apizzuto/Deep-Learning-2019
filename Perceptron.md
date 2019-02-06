@@ -81,13 +81,27 @@ For the given dataset, the perceptron performs _reasonably_ well for different n
 
 ![Perceptron Performance](./images/Perceptron_performance.png "perceptron with decision boundary")
 
-Because of the linear seperability, the perceptron does a perfect job on the training set (left), but does not do perfectly for the test set because of the points near the boundary. This could be fixed with a little bit of cross-valdiation. 
+Because of the linear seperability, the perceptron does a perfect job on the training set (left), but does not do perfectly for the test set because of the points near the boundary. This could be fixed with a little bit of cross-validation. 
 
-### Perceptron: Proof of Convergence
+## Perceptron: Proof of Convergence
 
 A quick note: Perceptron's don't guarantee the __best__ solution in the case of linearly seperability, just one of them. For the best, you might consider a more sophisticated method (ie a Support Vector Machine), but these tend to scale unfavorably computationally, and that is the advantage of neural nets.
 
-## Homework 1
+Geometrically, the proof hinges on the existence of a decision boundary. In this case, the weight vector is perpendicular to the decision boundary. This scales to $n$-dimensions, i.e. if there exists a hyperplane decision boundary that perfectly classifies, then the weight vector will be orthogonal to the decision hyperplane. 
+
+![Perceptron Geometry](./images/perceptron_geometry.png "perceptron with decision boundary")
+![Perceptron Geometry](./images/perceptron_geometry_1.png "perceptron with decision boundary")
+![Perceptron Geometry](./images/perceptron_geometry_2.png "perceptron with decision boundary")
+
+One thing to note about many linear classifiers. Typically, they scale as $\mathcal{O}(n^2)$ because you must create distance matrices for all of the samples in your feature space. Deep learning algorithms typically scale sub-quadratically with sample size.
+
+### Analogy to Future Lectures
+
+Perceptron learning is similar to least-squares regression. The perceptron optimizes a loss function, and if we set that equal to the gradient of our mean squared error function, then we get least-squares regression. 
+
+Another thing to note is that with a step function, taking the gradient leads to a $\delta$-function, something that doesn't play too nicely with our definitions, so we treat it as not differentiable. 
+
+## Homework 1 class discussion
 
 Homework 1 is just replacing this `python` code with built-in python methods, and no python modules. This was my attempt at trying to finish it before the end of class: 
 
