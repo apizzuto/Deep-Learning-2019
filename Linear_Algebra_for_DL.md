@@ -79,3 +79,10 @@ When referring to weights, $w_{i,j}$, $j$ refers to the input position and $i$ r
 ##### A brief note on dimensionalities
 
 Suppose you take a dataset with $n$ samples each with $m$ features ($n \times m$). Then in general, the first layer will have $h$ perceptrons that take each of the $m$ features, ($m \times h$), so after the first layer, you will have a new feature matrix that is $n \times h$, in other words, each of $n$ samples has $h$ new transformed feature variables that can be used to make a classification or for another layer of learning. 
+
+#### Layers in `PyTorch`
+
+It is very simple to take the layer we have written in native python and convert to `pytorch`. The `nn.Linear` layer stores `weight` vectors and `bias` as class attributes. 
+
+![PyTorch Fully Connected Layer](./images/fc_layer_pytorch.png "PyTorch FC layer")
+
